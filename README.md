@@ -4,6 +4,14 @@ Leitor de documentos para **Windows** inspirado no [Evince](https://gitlab.gnome
 
 Formatos: **PDF**, XPS/OXPS, EPUB, MOBI, FB2, CBZ, SVG, TXT e imagens (PNG, JPG, TIFF…).
 
+## Capturas de tela
+
+| Documentos recentes | Leitura com miniaturas |
+|---|---|
+| ![Tela inicial com os documentos recentes](docs/recentes.png) | ![Leitura de um documento com a barra lateral de miniaturas](docs/leitura.png) |
+| **Busca com destaque** | **Modo noturno e sumário** |
+| ![Busca incremental com os resultados destacados](docs/busca.png) | ![Cores invertidas com o sumário na barra lateral](docs/modo-noturno.png) |
+
 ## Recursos
 
 - Visual no estilo do Evince/Adwaita: barra de título integrada (headerbar), seletor de página "1 de 14", zoom "100% ▾", barra lateral com miniaturas, sumário e marcadores
@@ -61,6 +69,8 @@ O instalador não pede administrador. Ele cria um atalho no menu Iniciar (e, se 
 Se a barra de título personalizada der algum problema no seu Windows, rode com a variável `PDFX_NATIVE_FRAME=1` para usar a moldura padrão.
 
 Erros inesperados são gravados em `%LOCALAPPDATA%\PDFx\pdfx-erros.log`.
+
+Para regerar as capturas de tela em `docs/`: `.\.venv\Scripts\python tools\make_screenshots.py` (usa documentos de exemplo e não mexe nas suas preferências).
 
 ## Licenças
 
